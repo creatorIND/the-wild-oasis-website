@@ -4,7 +4,7 @@ import { auth } from "@/app/_lib/auth";
 import { getGuest } from "@/app/_lib/data-service";
 
 export const metadata = {
-	title: "Update profile",
+	title: "Update Profile",
 };
 
 export default async function Page() {

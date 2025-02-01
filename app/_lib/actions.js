@@ -28,7 +28,7 @@ export async function updateGuest(formData) {
 	revalidatePath("/account/profile");
 }
 
-export async function deleteReservation(bookingId) {
+export async function deleteBooking(bookingId) {
 	const session = await auth();
 	if (!session) throw new Error("You must be logged in");
 
@@ -127,7 +127,7 @@ export async function updateBooking(formData) {
 
 export async function signInAction() {
 	await signIn("google", {
-		redirectTo: "/account",
+		redirectTo: "/cabins",
 	});
 }
 
