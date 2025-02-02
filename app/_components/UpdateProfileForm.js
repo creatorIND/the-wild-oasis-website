@@ -49,7 +49,12 @@ function UpdateProfileForm({ children, guest }) {
 				<input
 					name="nationalID"
 					defaultValue={nationalID}
+					pattern="[a-zA-Z0-9]{6,12}"
+					minLength={6}
+					maxLength={12}
 					className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
+					title="National ID must be 6 to 12 characters long and contain only letters and numbers"
+					required
 				/>
 			</div>
 
