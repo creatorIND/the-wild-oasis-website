@@ -44,7 +44,6 @@ function DateSelector({ settings, bookedDates, cabin }) {
 				className="pt-6 lg:pt-12 place-self-center"
 				classNames={{
 					months: "flex flex-col sm:flex-row gap-6",
-					month: "",
 				}}
 				mode="range"
 				onSelect={handleSelect}
@@ -62,7 +61,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
 				}
 			/>
 
-			<div className="flex items-center justify-between mt-6 lg:mt-0 px-4 xl:px-8 bg-accent-500 text-primary-800 h-[72px]">
+			<div className="flex items-center justify-between mt-6 px-4 xl:px-8 bg-accent-500 text-primary-800 h-[72px]">
 				<div className="flex items-center gap-4 min-[500px]:gap-6">
 					<span className="text-xl xl:text-2xl">
 						${discount > 0 ? regularPrice - discount : regularPrice}
