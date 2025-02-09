@@ -5,7 +5,7 @@ import bg from "@/public/bg.jpg";
 
 export default function Page() {
 	return (
-		<main className="mt-24">
+		<main className="mt-32">
 			<Image
 				src={bg}
 				fill
@@ -16,10 +16,10 @@ export default function Page() {
 			/>
 
 			<div className="relative z-10 text-center">
-				<h1 className="text-7xl text-primary-50 mb-6 tracking-tight font-normal">
+				<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-primary-50 mb-6 tracking-tight font-normal">
 					Welcome to paradise
 				</h1>
-				<p className="mb-8 mx-auto text-xl font-light w-3/5">
+				<p className="mb-8 mx-auto text-xl font-light lg:w-4/5 xl:w-3/5">
 					Escape to the heart of the Italian Dolomites, where luxury
 					cabins meet the freedom of nature for unforgettable moments
 					with loved ones.

@@ -41,7 +41,11 @@ function DateSelector({ settings, bookedDates, cabin }) {
 	return (
 		<div className="flex flex-col justify-between">
 			<DayPicker
-				className="pt-12 place-self-center"
+				className="pt-6 lg:pt-12 place-self-center"
+				classNames={{
+					months: "flex flex-col sm:flex-row gap-6",
+					month: "",
+				}}
 				mode="range"
 				onSelect={handleSelect}
 				selected={range}
@@ -58,33 +62,24 @@ function DateSelector({ settings, bookedDates, cabin }) {
 				}
 			/>
 
-			<div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]">
-				<div className="flex items-baseline gap-6">
-					<p className="flex gap-2 items-baseline">
-						{discount > 0 ? (
-							<>
-								<span className="text-2xl">
-									${regularPrice - discount}
-								</span>
-								<span className="line-through font-semibold text-primary-700">
-									${regularPrice}
-								</span>
-							</>
-						) : (
-							<span className="text-2xl">${regularPrice}</span>
-						)}
-						<span className="">/night</span>
-					</p>
+			<div className="flex items-center justify-between mt-6 lg:mt-0 px-4 xl:px-8 bg-accent-500 text-primary-800 h-[72px]">
+				<div className="flex items-center gap-4 min-[500px]:gap-6">
+					<span className="text-xl xl:text-2xl">
+						${discount > 0 ? regularPrice - discount : regularPrice}
+						<span className="text-base">/night</span>
+					</span>
+
 					{numNights ? (
 						<>
-							<p className="bg-accent-600 px-3 py-2 text-2xl">
-								<span>&times;</span> <span>{numNights}</span>
+							<p className="bg-accent-600 px-3 py-2 text-base xl:text-lg">
+								<span>&times;</span>
+								<span>{numNights}</span>
 							</p>
 							<p>
-								<span className="text-lg font-bold uppercase">
+								<span className="text-base xl:text-lg uppercase">
 									Total
 								</span>{" "}
-								<span className="text-2xl font-semibold">
+								<span className="text-lg xl:text-xl font-semibold">
 									${cabinPrice}
 								</span>
 							</p>

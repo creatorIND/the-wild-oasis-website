@@ -21,7 +21,9 @@ export default async function Page() {
 			{bookings.length === 0 ? (
 				<p className="text-lg">
 					You have no reservations yet. Check out our{" "}
-					<Link className="underline text-accent-500" href="/cabins">
+					<Link
+						className="hover:underline text-accent-500"
+						href="/cabins">
 						luxury cabins &rarr;
 					</Link>
 				</p>
