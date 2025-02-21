@@ -11,22 +11,26 @@ function UpdateProfileForm({ children, guest }) {
 			action={updateGuest}
 			className="bg-primary-900 py-8 px-4 sm:px-6 md:px-12 text-lg flex gap-6 flex-col">
 			<div className="space-y-2">
-				<label>Full name</label>
+				<label htmlFor="fullName">Full name</label>
 				<input
+					id="fullName"
 					name="fullName"
 					defaultValue={fullName}
 					className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm disabled:cursor-not-allowed disabled:bg-gray-600 disabled:text-gray-400"
 					disabled
+					autoComplete="off"
 				/>
 			</div>
 
 			<div className="space-y-2">
-				<label>Email address</label>
+				<label htmlFor="email">Email address</label>
 				<input
+					id="email"
 					name="email"
 					defaultValue={email}
 					className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm disabled:cursor-not-allowed disabled:bg-gray-600 disabled:text-gray-400"
 					disabled
+					autoComplete="off"
 				/>
 			</div>
 
@@ -47,6 +51,7 @@ function UpdateProfileForm({ children, guest }) {
 			<div className="space-y-2">
 				<label htmlFor="nationalID">National ID number</label>
 				<input
+					id="nationalID"
 					name="nationalID"
 					defaultValue={nationalID}
 					pattern="[a-zA-Z0-9]{6,12}"

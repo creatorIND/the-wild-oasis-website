@@ -26,7 +26,7 @@ export default function Page() {
 				</p>
 				<Link
 					href="/cabins"
-					className="align-middle border border-primary-300 px-4 py-2 text-primary-300 font-semibold hover:bg-primary-300 hover:text-primary-800 transition-all inline-block text-lg">
+					className="border border-primary-300 px-4 sm:px-8 py-3 text-primary-300 font-semibold hover:bg-primary-300 hover:text-primary-800 transition-all inline-block text-lg">
 					Explore luxury cabins
 				</Link>
 			</div>

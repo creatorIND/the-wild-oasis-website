@@ -2,13 +2,13 @@ import Link from "next/link";
 
 function NotFound() {
 	return (
-		<main className="text-center space-y-6 mt-4">
-			<h1 className="text-3xl font-semibold">
+		<main className="text-center space-y-6 mt-20">
+			<h1 className="text-xl sm:text-3xl font-semibold">
 				This cabin could not be found :(
 			</h1>
 			<Link
 				href="/cabins"
-				className="inline-block bg-accent-500 text-primary-800 px-6 py-3 text-lg">
+				className="inline-block mt-4 bg-accent-500 px-4 sm:px-8 py-3 text-base text-primary-800 font-semibold hover:bg-accent-600 transition-all">
 				Back to all cabins
 			</Link>
 		</main>

@@ -13,7 +13,7 @@ export default async function Page() {
 	const firstName = guest.fullName.split(" ")[0];
 
 	return (
-		<div>
+		<>
 			<h2 className="font-semibold text-2xl text-accent-400 mb-4">
 				Welcome, {firstName}
 			</h2>
@@ -30,6 +30,6 @@ export default async function Page() {
 					defaultCountry={guest.nationality}
 				/>
 			</UpdateProfileForm>
-		</div>
+		</>
 	);
 }

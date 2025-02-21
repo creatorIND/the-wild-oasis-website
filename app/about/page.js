@@ -97,7 +97,7 @@ export default async function Page() {
 
 						<Link
 							href="/cabins"
-							className="inline-block mt-4 bg-accent-500 px-4 sm:px-8 py-2 sm:py-4 text-base text-primary-800 font-semibold hover:bg-accent-600 transition-all">
+							className="inline-block mt-4 bg-accent-500 px-4 sm:px-8 py-3 text-base text-primary-800 font-semibold hover:bg-accent-600 transition-all">
 							Explore our luxury cabins
 						</Link>
 					</div>
