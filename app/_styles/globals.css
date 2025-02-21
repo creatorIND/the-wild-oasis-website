@@ -36,3 +36,8 @@
 	--rdp-background-color: theme("colors.accent.600") !important;
 	margin: 0 !important;
 }
+@layer base {
+	:root {
+		--radius: 0.5rem;
+	}
+}
