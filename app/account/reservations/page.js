@@ -22,7 +22,7 @@ export default async function Page() {
 				<p className="text-lg">
 					You have no reservations yet. Check out our{" "}
 					<Link
-						className="hover:underline text-accent-500"
+						className="text-accent-500 underline underline-offset-4 decoration-1 decoration-dashed hover:decoration-solid"
 						href="/cabins">
 						luxury cabins &rarr;
 					</Link>

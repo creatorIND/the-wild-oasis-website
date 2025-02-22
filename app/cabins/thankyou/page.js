@@ -20,7 +20,7 @@ export default async function Page({ searchParams }) {
 			</h2>
 			<Link
 				href="/account/reservations"
-				className="text-base sm:text-lg text-accent-500 inline-block hover:underline">
+				className="text-base sm:text-lg inline-block text-accent-500 underline underline-offset-4 decoration-1 decoration-dashed hover:decoration-solid">
 				Manage your reservations &rarr;
 			</Link>
 		</div>
