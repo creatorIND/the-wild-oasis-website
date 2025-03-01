@@ -72,7 +72,7 @@ function NavLinks({ session, closeMenu }) {
 					Privacy Policy
 				</Link>
 			</li>
-			<li className="max-lg:mt-auto max-lg:mb-4 max-lg:bg-primary-900 max-lg:p-4 max-lg:rounded-[0.5rem]">
+			<li className="max-lg:mt-auto max-lg:mb-4 max-lg:bg-primary-900 max-lg:p-4">
 				{session?.user?.image ? (
 					<Link
 						href="/account"
