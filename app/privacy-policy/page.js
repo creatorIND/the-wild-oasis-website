@@ -116,9 +116,9 @@ export default function Page() {
 								Oasis, accessible from{" "}
 								<Link
 									className="text-accent-500 underline underline-offset-4 decoration-1 decoration-dashed hover:decoration-solid"
-									href="https://oasis.sujalsinha.com"
+									href="https://oasis.sujalsinha.dev"
 									target="_blank">
-									https://oasis.sujalsinha.com
+									https://oasis.sujalsinha.dev
 								</Link>
 							</li>
 							<li>
@@ -641,14 +641,7 @@ export default function Page() {
 					If you have any questions about this Privacy Policy, You can
 					contact us:
 					<ul className="list-disc pl-8 space-y-2 mt-2">
-						<li>
-							By email:{" "}
-							<Link
-								className="text-accent-500 underline underline-offset-4 decoration-1 decoration-dashed hover:decoration-solid"
-								href="mailto:me@sujalsinha.com">
-								me@sujalsinha.com
-							</Link>
-						</li>
+						<li>By email: [REDACTED]</li>
 					</ul>
 				</div>
 			</section>

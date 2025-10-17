@@ -28,7 +28,7 @@ export default function Page() {
 				Hotel staff want to access your dashboard?{" "}
 				<Link
 					className="text-accent-500 underline underline-offset-4 decoration-1 decoration-dashed hover:decoration-solid"
-					href="https://oasis-staff.sujalsinha.com"
+					href="https://oasis-staff.sujalsinha.dev"
 					target="_blank">
 					Login here
 				</Link>
